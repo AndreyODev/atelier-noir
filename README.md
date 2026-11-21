@@ -15,9 +15,11 @@ O repositório está organizado em áreas independentes:
 
 O banco será acessado exclusivamente pelo backend.
 
-## Estado inicial
+## Estado do projeto
 
-Esta primeira unidade contém somente a estrutura do repositório e documentação. Next.js, Express e Prisma não foram inicializados nesta etapa.
+O frontend Next.js está inicializado com App Router, React, TypeScript e ESLint. A rota inicial é uma página técnica provisória para validar o ambiente; ela não é a Home da loja nem implementa a identidade visual aprovada.
+
+Express e Prisma ainda não foram inicializados. A implementação visual da Home aguarda autorização do proprietário.
 
 ## Desenvolvimento
 

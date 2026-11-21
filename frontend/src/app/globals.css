@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #f2f1ed;
+  color: #20211f;
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.status-page {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 24px;
+}
+
+.status-panel {
+  width: min(100%, 520px);
+  padding: 36px;
+  border: 1px solid #d4d2cc;
+  background: #fbfaf7;
+}
+
+.status-label {
+  margin: 0 0 24px;
+  color: #656660;
+  font-size: 0.75rem;
+}
+
+.status-panel h1 {
+  margin: 0;
+  font-size: clamp(2rem, 8vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.status-message {
+  margin: 24px 0 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.status-note {
+  margin: 8px 0 0;
+  color: #656660;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .status-panel {
+    padding: 28px 24px;
+  }
+}
