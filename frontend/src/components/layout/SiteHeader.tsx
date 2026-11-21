@@ -130,7 +130,7 @@ export default function SiteHeader() {
       <header className="site-header">
         <div className="header-inner">
           <nav className="desktop-navigation" aria-label="Navegação principal">
-            <a href="#colecoes">COLEÇÕES</a>
+            <a href="/collections">COLEÇÕES</a>
             <a href="#novidades">LOJA</a>
             <a href="#sobre">SOBRE</a>
           </nav>
@@ -183,7 +183,7 @@ export default function SiteHeader() {
           hidden={!mobileMenuOpen}
           id="mobile-navigation"
         >
-          <a href="#colecoes" onClick={closeMenu}>
+          <a href="/collections" onClick={closeMenu}>
             Coleções
           </a>
           <a href="#novidades" onClick={closeMenu}>
