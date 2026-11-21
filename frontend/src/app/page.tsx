@@ -1,14 +1,25 @@
+import AnnouncementBar from "@/components/layout/AnnouncementBar";
+import SiteFooter from "@/components/layout/SiteFooter";
+import SiteHeader from "@/components/layout/SiteHeader";
+import BrandStory from "@/components/home/BrandStory";
+import CollectionHighlights from "@/components/home/CollectionHighlights";
+import FeaturedProducts from "@/components/home/FeaturedProducts";
+import HeroSection from "@/components/home/HeroSection";
+
 export default function HomePage() {
   return (
-    <main className="status-page">
-      <section className="status-panel" aria-labelledby="page-title">
-        <p className="status-label">Frontend · ambiente local</p>
-        <h1 id="page-title">ATELIER NOIR</h1>
-        <p className="status-message" role="status">
-          Ambiente de desenvolvimento funcionando.
-        </p>
-        <p className="status-note">Página técnica provisória.</p>
-      </section>
-    </main>
+    <>
+      <div className="site-chrome" id="top">
+        <AnnouncementBar />
+        <SiteHeader />
+      </div>
+      <main id="conteudo">
+        <HeroSection />
+        <CollectionHighlights />
+        <FeaturedProducts />
+        <BrandStory />
+      </main>
+      <SiteFooter />
+    </>
   );
 }
